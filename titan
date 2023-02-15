@@ -1,0 +1,91 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN7pOG+o8aJYNT9vgnrZB+5",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/menpente/sandbox/blob/main/titan\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 10,
+      "metadata": {
+        "id": "J2OcET34alHu",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "8a839591-cf62-4048-bc85-8f4a41ccf651"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/\n",
+            "Collecting speechrecognition\n",
+            "  Using cached SpeechRecognition-3.9.0-py2.py3-none-any.whl (32.8 MB)\n",
+            "Collecting pyttsx3\n",
+            "  Using cached pyttsx3-2.90-py3-none-any.whl (39 kB)\n",
+            "Collecting datetime\n",
+            "  Using cached DateTime-5.0-py3-none-any.whl (52 kB)\n",
+            "Collecting requests>=2.26.0\n",
+            "  Downloading requests-2.28.2-py3-none-any.whl (62 kB)\n",
+            "\u001b[2K     \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m62.8/62.8 KB\u001b[0m \u001b[31m2.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25hRequirement already satisfied: pytz in /usr/local/lib/python3.8/dist-packages (from datetime) (2022.7.1)\n",
+            "Collecting zope.interface\n",
+            "  Downloading zope.interface-5.5.2-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (261 kB)\n",
+            "\u001b[2K     \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m261.4/261.4 KB\u001b[0m \u001b[31m10.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25hRequirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests>=2.26.0->speechrecognition) (1.24.3)\n",
+            "Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.8/dist-packages (from requests>=2.26.0->speechrecognition) (2.1.1)\n",
+            "Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.8/dist-packages (from requests>=2.26.0->speechrecognition) (2.10)\n",
+            "Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests>=2.26.0->speechrecognition) (2022.12.7)\n",
+            "Requirement already satisfied: setuptools in /usr/local/lib/python3.8/dist-packages (from zope.interface->datetime) (57.4.0)\n",
+            "Installing collected packages: pyttsx3, zope.interface, requests, speechrecognition, datetime\n",
+            "  Attempting uninstall: requests\n",
+            "    Found existing installation: requests 2.25.1\n",
+            "    Uninstalling requests-2.25.1:\n",
+            "      Successfully uninstalled requests-2.25.1\n",
+            "Successfully installed datetime-5.0 pyttsx3-2.90 requests-2.28.2 speechrecognition-3.9.0 zope.interface-5.5.2\n"
+          ]
+        }
+      ],
+      "source": [
+        "!pip install speechrecognition pyttsx3 datetime"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import speech_recognition as sr\n",
+        "import pyttsx3\n",
+        "import datetime\n",
+        "import webbrowser"
+      ],
+      "metadata": {
+        "id": "0Ip8DeuTanHg"
+      },
+      "execution_count": 11,
+      "outputs": []
+    }
+  ]
+}
